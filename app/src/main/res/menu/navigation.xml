@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/find_path"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_find_path" />
+
+    <item
+        android:id="@+id/find_ATM"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_find_ATM" />
+
+    <item
+        android:id="@+id/find_bikePark"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_find_bikePark" />
+
+    <item
+        android:id="@+id/find_copy"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_find_copy" />
+    <item
+        android:id="@+id/find_etc"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_find_etc" />
+
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">cbgg</string>
+    <string name="title_find_path">경로 찾기</string>
+    <string name="title_find_ATM">ATM 찾기</string>
+    <string name="title_find_bikePark">자전거 주차장 찾기</string>
+    <string name="title_find_copy">복사실(큐브)찾기</string>
+    <string name="title_find_etc">기타 편의시설 찾기</string>>
+</resources>
