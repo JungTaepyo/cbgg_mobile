@@ -27,11 +27,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/navigation" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="358dp"
-        android:layout_height="366dp"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="55dp" />
+    <RelativeLayout
+    android:id="@+id/map_view"
+    android:layout_width="358dp"
+    android:layout_height="366dp"
+    tools:layout_editor_absoluteX="13dp"
+    tools:layout_editor_absoluteY="55dp" />
 
 </android.support.constraint.ConstraintLayout>
