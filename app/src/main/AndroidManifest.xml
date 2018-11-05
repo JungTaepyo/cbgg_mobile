@@ -23,7 +23,11 @@
             </intent-filter>
         </activity>
 
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="43c7514912b8140342cd77d5779210a3"/>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="43c7514912b8140342cd77d5779210a3" />
+
+        <activity android:name=".LoadingActivity"></activity>
     </application>
 
 </manifest>

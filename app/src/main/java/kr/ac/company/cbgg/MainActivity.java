@@ -1,5 +1,6 @@
 package kr.ac.company.cbgg;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -52,15 +53,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        startActivity(new Intent(this, LoadingActivity.class));
 //        MapView mapView = new MapView(this);
 //
 //        ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
 //        mapViewContainer.addView(mapView);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+//        mTextMessage = (TextView) findViewById(R.id.message);
+//        //BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+//        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
 }
