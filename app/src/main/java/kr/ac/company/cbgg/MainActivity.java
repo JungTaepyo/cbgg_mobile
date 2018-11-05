@@ -13,6 +13,7 @@ import net.daum.mf.map.api.MapView;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            mTextMessage.setText(item.getTitle());
             if(item.getItemId() == R.id.find_path) {
                 mTextMessage.setText(R.string.title_find_path);
                 // FInd_PATH 함수
@@ -51,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MapView mapView = new MapView(this);
-
-        ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
-        mapViewContainer.addView(mapView);
+//        MapView mapView = new MapView(this);
+//
+//        ViewGroup mapViewContainer = (ViewGroup) findViewById(R.id.map_view);
+//        mapViewContainer.addView(mapView);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
