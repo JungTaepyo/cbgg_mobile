@@ -7,32 +7,147 @@
     android:layout_height="match_parent"
     tools:context="kr.ac.company.cbgg.MainActivity">
 
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<TextView-->
+            <!--android:id="@+id/message"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="충방곡곡"-->
+            <!--android:textSize="36dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:gravity="center"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_below="@+id/message"-->
+            <!--android:layout_above="@+id/navigation"-->
+            <!--android:id="@+id/map_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <!--<android.support.design.widget.BottomNavigationView-->
+            <!--android:id="@+id/navigation"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="?android:attr/windowBackground"-->
+            <!--app:menu="@menu/navigation" />-->
+    <!--</RelativeLayout>-->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
-            android:id="@+id/message"
+            android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
             android:text="충방곡곡"
             android:textSize="36dp"
-            android:layout_alignParentTop="true"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:background="#0080ff"
+            android:textStyle="bold"/>
 
-        <RelativeLayout
-            android:layout_below="@+id/message"
-            android:layout_above="@+id/navigation"
-            android:id="@+id/map_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/text2"
+          android:layout_below="@+id/text1"
+          android:orientation="vertical">
 
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/navigation"
-            android:layout_alignParentBottom="true"
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_weight="1">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:text="경로찾기"
+                  android:textSize="20dp"
+                  android:background="@drawable/Button"
+                  android:id="@+id/find_path"/>
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:text="ATM"
+                  android:textSize="20dp"
+                  android:background="@drawable/Button"
+                  android:id="@+id/find_ATM"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_weight="1">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:text="자전거"
+                  android:textSize="20dp"
+                  android:background="@drawable/Button"
+                  android:id="@+id/find_bikePark"/>
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:text="큐브"
+                  android:textSize="20dp"
+                  android:background="@drawable/Button"
+                  android:id="@+id/find_copy"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_weight="1">
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:text="편의시설"
+                  android:textSize="20dp"
+                  android:background="@drawable/Button"
+                  android:id="@+id/find_etc"/>
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:text="지도보기"
+                  android:textSize="20dp"
+                  android:background="@drawable/Button"
+                  android:id="@+id/find_map"/>
+          </LinearLayout>
+
+
+      </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground"
-            app:menu="@menu/navigation" />
+            android:layout_alignParentBottom="true"
+            android:text="mady by 전철민 정균휘 정태표"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#0080ff"
+            />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
